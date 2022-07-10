@@ -1,6 +1,7 @@
 # KV
 
-**TODO: Add description**
+This is a sample project from the main Elixir documentation that I am following to learn the basics
+of Elixir and Erlang. 
 
 ## Installation
 
