@@ -7,10 +7,10 @@ defmodule KV.RegistryTest do
   end
 
   test "spawns_buckets", %{registry: registry} do
-    assert KV.Registry.lookup(registry, "shopping") == :error_handler
+    assert KV.Registry.lookup(registry, "shopping") == :error
 
     KV.Registry.create(registry, "shopping")
-    assert(:ok, bucket} = KV.Registry.lookup(registry, "shopping")
+    assert{:ok, bucket} = KV.Registry.lookup(registry, "shopping")
 
     KV.Bucket.put(bucket, "milk", 1)
     assert KV.Bucket.get(bucket, "milk") == 1
