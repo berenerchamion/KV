@@ -25,7 +25,7 @@ defmodule KV.Registry do
   Ensures there is a bucket associated with the given `name`
   """
   def create(server, name) do
-    GenServer.call(server, {:create, name})
+    GenServer.cast(server, {:create, name})
   end
 
   ## Defining GenServer Callbacks
